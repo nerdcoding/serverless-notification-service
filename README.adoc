@@ -1,0 +1,35 @@
+
+=== Install node.js & NPM
+```
+$ node -v
+v16.5.0
+
+$ npm -v
+7.19.1
+```
+
+=== Install AWS CLI V2
+```
+$ aws --version
+aws-cli/2.0.60 Python/3.9.6 Linux/5.13.5-arch1-1 source/x86_64.arch
+```
+
+=== Install Serverless Framework
+```
+$ serverless --version
+Framework Core: 2.52.1 (standalone)
+Plugin: 5.4.3
+SDK: 4.2.5
+Components: 3.14.0
+```
+
+=== Create & deploy test project
+```
+$ serverless create --template aws-nodejs
+$ serverless deploy
+$ erverless invoke --function hello
+{
+    "statusCode": 200,
+    "body": "{\n  \"message\": \"Go Serverless v1.0! Your function executed successfully!\",\n  \"input\": {}\n}"
+}
+```
